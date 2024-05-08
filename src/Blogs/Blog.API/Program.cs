@@ -18,7 +18,7 @@ namespace Blog.API
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseNpgsql("Port=5432;Database=BlogsbaseDb;Host=localhost;User Id=postgres;Password=root;");
+                options.UseNpgsql(builder.Configuration.GetConnectionString("Con"));
             });
 
             var app = builder.Build();

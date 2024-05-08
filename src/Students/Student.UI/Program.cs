@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using Student.UI.Persistanse;
+
 namespace Student.UI
 {
     public class Program
@@ -13,6 +16,11 @@ namespace Student.UI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseNpgsql(builder.Configuration.GetConnectionString("Con"));
+            });
+
 
             var app = builder.Build();
 
