@@ -58,9 +58,9 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=BlDb
+      - POSTGRES_DB=BlDB
     volumes:
-      - pgdata:/var/lib/postgresql/BlDb
+      - pgdata:/var/lib/postgresql/BlDB
     ports:
       - "5432:5432"
     networks:
@@ -72,9 +72,9 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=StDb
+      - POSTGRES_DB=StDB
     volumes:
-      - pgdata:/var/lib/postgresql/StDb
+      - pgdata:/var/lib/postgresql/StDB
     ports:
       - "5432:5432"
     networks:
@@ -86,9 +86,9 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=CmDb
+      - POSTGRES_DB=CmDB
     volumes:
-      - pgdata:/var/lib/postgresql/CmDb
+      - pgdata:/var/lib/postgresql/CmDB
     ports:
       - "5432:5432"
     networks:
