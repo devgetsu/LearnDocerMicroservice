@@ -19,11 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Students", "Students", "{2D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comanies", "Comanies", "{114103C7-75FC-4FC8-8DB9-D0F56158E2E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "src\Companys\WebApplication1\WebApplication1.csproj", "{E33E748B-227B-46BB-BF19-4412DE3EBABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "src\Companys\WebApplication1\WebApplication1.csproj", "{E33E748B-227B-46BB-BF19-4412DE3EBABE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{4C085820-BF17-4228-9826-AE0AEB30B763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIgateway", "src\gate\APIgateway\APIgateway.csproj", "{2B2442FD-313A-4C6F-806C-483FE4F7DB76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIgateway", "src\gate\APIgateway\APIgateway.csproj", "{2B2442FD-313A-4C6F-806C-483FE4F7DB76}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{249412B9-3282-4496-BB49-2B2E3E4BF7ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{2B2442FD-313A-4C6F-806C-483FE4F7DB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2442FD-313A-4C6F-806C-483FE4F7DB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2442FD-313A-4C6F-806C-483FE4F7DB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249412B9-3282-4496-BB49-2B2E3E4BF7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249412B9-3282-4496-BB49-2B2E3E4BF7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249412B9-3282-4496-BB49-2B2E3E4BF7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249412B9-3282-4496-BB49-2B2E3E4BF7ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
