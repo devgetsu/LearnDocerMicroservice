@@ -27,6 +27,8 @@ services:
     build:
       context: .
       dockerfile: src/gate/APIgateway/Dockerfile
+    networks:
+     - db-network
 
 
   product.api:

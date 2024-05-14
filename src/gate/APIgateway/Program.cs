@@ -31,6 +31,12 @@ namespace APIgateway
 
             app.UseHttpsRedirection();
 
+            app.UseCors(options =>
+            {
+                options.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader();
+            }
+            );
+
             app.UseAuthorization();
 
 

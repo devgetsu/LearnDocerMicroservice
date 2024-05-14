@@ -5,11 +5,11 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7216
+          "Host": "productapi",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/apigetewey/Products",
+      "UpstreamPathTemplate": "/api/Products",
       "UpstreamHttpMethod": [ "GET" ]
     },
     {
@@ -34,31 +34,7 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/Product/{id}",
-      "UpstreamHttpMethod": [ "Delete" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/Product/{id}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 7216
-        }
-      ],
-      "UpstreamPathTemplate": "/apigateway/Product/{id}",
-      "UpstreamHttpMethod": [ "Update" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/Student/",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 7192
-        }
-      ],
-      "UpstreamPathTemplate": "/apigateway/Students/",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Delete", "Update" ]
     },
     {
       "DownstreamPathTemplate": "/api/Student/",
